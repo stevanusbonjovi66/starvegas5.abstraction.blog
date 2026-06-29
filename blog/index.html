@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+description: Berita ringkas starvegas5: navigasi ke layanan utama dan halaman internal portal.
+image: /assets/images/og-default.svg
+---
+
+{% include nav.html %}
+
+# Blog starvegas5
+
+Jelajahi postingan di bawah, lalu lanjut ke [starvegas5 — layanan lengkap](https://starvegas55.org) bila membutuhkan akses penuh.
+
+<ul class="wy-post-list">
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="wy-post-date">{{ post.date | date: "%d %b %Y" }}</span>
+    {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<p>Lihat juga <a href="/resources">sumber daya</a>, <a href="/about">tentang kami</a>, dan <a href="https://starvegas55.org">starvegas5 — layanan lengkap</a>.</p>
