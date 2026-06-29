@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://starvegas5.abstraction.blog/sitemap.xml
